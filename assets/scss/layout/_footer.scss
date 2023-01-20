@@ -1,0 +1,270 @@
+
+
+.footer{
+    width: 100%;
+    background: #f8f8f9;
+    .sc-cert{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 80px;
+        @include desktop{
+            padding: 20px 40px;
+        }
+        @include tablet{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            padding: 20px 20px;
+        }
+        .title{
+            font-size: 18px;
+            font-weight: 600;
+            display: inline-block;
+            @include tablet{
+                text-align: left;
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+        }
+        .logo-box{
+            display: flex;
+            gap: 30px;
+            @include tablet{
+                display: flex;
+                gap: 0px;
+                width: 100%;
+                gap: 30px;
+            }
+            @include mobile{
+                gap: 15px;
+            }
+            a{
+                display: block;
+                height: 52px;
+            }
+            .link-bitgo{
+                background-image: url('../images/footer-cert-01.webp');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 115px; height: 52px;
+                @include tablet{
+                    width: 70px;
+                }
+            }
+            .link-nh{
+                background-image: url('../images/footer-cert-02.webp');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 117px; height: 52px;
+                @include tablet{
+                    width: 70px;
+                }
+            }
+            .link-isms{
+                background-image: url('../images/footer-cert-03.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 50px; height: 52px;
+                @include tablet{
+                    width: 40px;
+                }
+            }
+            .link-iso{
+                background-image: url('../images/footer-cert-04.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 52px; height: 52px;
+                @include tablet{
+                    width: 40px;
+                }
+            }
+
+        }
+    }
+
+    .footer-border{
+        margin: 0px 80px;
+        background: rgb(218, 218, 218);
+        height: 0.1px;
+        border: 0;
+        @include desktop{
+            margin: 0 40px;
+        }
+        @include tablet{
+            margin: 0px 20px;
+        }
+    }
+
+    .sc-info{
+        padding: 40px 80px;
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+            padding: 20px 40px;
+        }
+        @include tablet{
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-area{
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .title{
+                display: block;
+                font-weight: 600;
+                font-size: 14px;
+                padding-bottom: 10px;
+                color: #000;
+            }
+        }
+        .site-box{
+            display: flex;
+            gap: 40px;
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .site-list{
+                position: relative;
+                @include tablet{
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid rgb(218, 218, 218);
+                }
+            }
+            .title{
+                @include tablet{
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        width: 20px; height: 15px;
+                        margin-left: 10px;
+                        background-image: url('../images/lang-arrow.svg');
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            .sub-list{
+                color: #888;
+                @include tablet{
+                    padding-bottom: 20px;
+                    display: none;
+                    &.on{
+                        display: block;
+                    }
+                }
+                li{
+                    padding-top: 5px;
+                }
+                .bold{
+                    font-weight: 600;
+                }
+            }
+        }
+        .cs-box{
+            font-size: 12px;
+            color: #888;
+            width: 40%;
+            @include tablet{
+                width: initial;
+            }
+            .info-box{
+                
+                li{padding-top: 5px;}
+                .bold{
+                    font-weight: 600;
+                    @include tablet{
+                        display: block;
+                    }
+                }
+                i{
+                    display: inline-block;
+                    margin: 0 5px;
+                    height: 12px;
+                    width: 1px;
+                    background: #ccc;
+                    @include tablet{
+                        display: inline-block;
+                        margin: 0 5px;
+                        height: 12px;
+                        width: 1px;
+                        background: #ccc;
+                    }
+                }
+                .light{
+                    padding-left: 10px;
+                    @include mobile{
+                        padding-left: 0;
+                    }
+                }
+                .add{
+                    padding-top: 40px;
+                    @include tablet{
+                        padding-top: 20px;
+                    }
+                }
+                .inquiry{
+                    padding-top: 10px;
+                    display: flex;
+                    gap: 10px;
+                    font-weight: 600;
+                    @include tablet{
+                        padding-top: 10px;
+                        display: flex;
+                        gap: 10px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    .bottom-area{
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 0.1px solid rgb(218, 218, 218);
+        display: flex;
+        justify-content: space-between;
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sns-list{
+            display: flex;
+            gap: 15px;
+            @include tablet{
+                display: flex;
+                gap: 15px;
+            }
+            img{width: 20px; height: 20px;}
+        }
+        .copy{
+            color: #aeb3bb;
+            font-size: 12px;
+            @include tablet{
+                font-size: 9px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
