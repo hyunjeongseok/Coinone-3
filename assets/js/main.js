@@ -44,7 +44,6 @@ $(function(){
                     end:"200%",
                     scrub:1,
                     pin:true,
-                    // markers:true,
                 },
             })
             mainPin.to('.diagonal-box',{
@@ -87,7 +86,6 @@ $(function(){
                     end:"100% 0%",
                     scrub:1,
                     pin:true,
-                    // markers:true,
                 },
                 'clip-path':'circle(70.7% at 50% 50%)',
             })
@@ -178,7 +176,6 @@ $(function(){
                     start:"0% 0%",
                     end:"20% 0%",
                     scrub:2,
-                    markers:true
                 },
                 xPercent:-80,
                 yPercent:-100,
